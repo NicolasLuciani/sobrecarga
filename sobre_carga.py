@@ -1,9 +1,9 @@
 class GeradorRelatorio:
     def gerar(self, titulo=None, *corpo, rodape=None, **metadados):
-        if len(titulo) > 0:
+        if titulo:
             print(f"{titulo}\n")
 
-        if len(corpo) > 0:
+        if corpo:
             for paragrafo in corpo:
                 print(paragrafo)
             print()
@@ -18,4 +18,3 @@ class GeradorRelatorio:
                 print(f"{chave}: {valor}")
                 print()
             print()
-
